@@ -1,4 +1,3 @@
-import { Box, Center, Flex, Grid } from "@chakra-ui/layout";
 import Head from "next/head";
 import Header from "../components/Header";
 import ProductCatalog from "../components/ProductCatalog";
@@ -15,7 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main style={{ height: "100vh" }}>
+      <main
+        style={{
+          height: "100%",
+          backgroundColor: "#e3e2e2",
+          paddingBottom: "16px",
+        }}
+      >
         <Header />
         <ProductCatalog />
       </main>
